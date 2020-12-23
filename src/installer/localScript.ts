@@ -6,6 +6,7 @@ export function getLocalScript(
   pmName: string,
   relativeUserPkgDir: string
 ): string {
+  relativeUserPkgDir = '.';
   return `${getBanner()}
 
 packageManager=${pmName}
